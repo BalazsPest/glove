@@ -214,7 +214,10 @@ $(document).ready(function($) {
 
 	/*template ending*/
 
-    var target = 'https://codingislove.com';
+	//link with preview
+	//link with thumbnail
+	/*
+    var target = 'https://google.com';
 
     $.ajax({
         url: "https://api.linkpreview.net",
@@ -222,9 +225,43 @@ $(document).ready(function($) {
         data: {q: target, key: 123456},
         success: function (response) {
             console.log(response);
-            alert(response);
+            alert(response.title);
         }
-    });
+    });*/
+
+
+
+
+	var imgChange = function (img) {
+        document.getElementById("previewImg").setAttribute("src",img)
+    };
+
+
+
+	var mediaLinks = function () {
+
+        document.getElementById("media_links").addEventListener("mouseout",function(){imgChange("assets/images/media.jpg")});
+        document.getElementById("madonna").addEventListener("mouseover",function(){imgChange("assets/images/madonna-glove1.jpg")});
+        document.getElementById("lady_gaga").addEventListener("mouseover",function(){imgChange("assets/images/lady_gaga1.jpg")});
+        document.getElementById("present").addEventListener("mouseover",function(){imgChange("assets/images/present.jpg")});
+        document.getElementById("past").addEventListener("mouseover",function(){imgChange("assets/images/pecsikesztyű1.jpg")});
+    };
+
+
+
+
+    mediaLinks();
+
+        /*
+        document.getElementById("madonna").addEventListener("mouseover",function () {
+            document.getElementById("previewImg").setAttribute("src","assets/images/madonna-glove1.jpg")
+
+        });
+        document.getElementById("madonna").addEventListener("mouseover",function(){imgChange("assets/images/madonna-glove1.jpg")})
+
+        document.getElementById("media_links").addEventListener("mouseout",function () {
+            document.getElementById("previewImg").setAttribute("src","assets/images/pecsikesztyű1.jpg")
+        });*/
 
 });
 
