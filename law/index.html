@@ -29,13 +29,15 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Bene Kesztyű</a>
+        <!--<a class="navbar-brand" href="index.html">Bene Kesztyű</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="probootstrap-navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link navbarrr" href="#section-home" data-token="Navbar-Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link navbar" href="#section-home" data-token="Navbar-Home" lang="hu">Bene Kesztyű</a></li>
+            <li class="nav-item"><a class="nav-link navbar" href="#section-home" data-token="Navbar-Home" lang="en">Bene Gloves</a></li>
+            <li class="nav-item"><a class="nav-link navbar" href="#section-home" data-token="Navbar-Home" lang="de">Bene Handschuhe</a></li>
             <!--<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>-->
             <li class="nav-item"><a class="nav-link" href="#section-about"  >Rólunk</a></li>
             <!--<li class="nav-item"><a class="nav-link" href="#section-why-us">Why</a></li>-->
@@ -48,20 +50,12 @@
             <li class="nav-item"><a class="nav-link" href="#section-testimonials">Rólunk mondták</a></li>
             <!--<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>-->
             <li class="nav-item"><a class="nav-link" href="#section-contact">Kapcsolat</a></li>
-              <nav class="menu">
-                  <ul class="menu_nav">
-                      <li class="language_select">
-                          <a href="">Hu</a>
-                          <ul class="language_select_children">
-                              <li id="en">En</li>
-                              <li id="de">Ge</li>
-                              <li id="hu">Hu</li>
-                          </ul>
-                      </li>
-                  </ul>
-              </nav>
+            <li class="nav-item switch-lang" value="hu">HU</li>
+            <li class="nav-item switch-lang" value="en">EN</li>
+            <li class="nav-item  switch-lang" value="de">GER</li>
+
           </ul>
-        </div>
+          </div>
       </div>
     </nav>
     <!-- END nav -->
@@ -197,20 +191,17 @@
       <div class="multiple-items pb_slide_v1">
         <div>
           <a href="" class="link-block">
-            <img src="assets/images/1900x1200_img_4.jpg" alt="product1" class="img-fluid">
-            <div class="slide-text">
+            <img src="assets/images/sampleGlove01.jpg" alt="product1" width="150" class="img-fluid">
+            <!--<div class="slide-text">
+            if we want to give desc. for gloves
               <h2>Criminal Law</h2>
               <p>Read More</p>
-            </div>
+            </div>-->
           </a>
         </div>
         <div>
           <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_2.jpg" alt="product2" class="img-fluid">
-            <div class="slide-text">
-              <h2>Migration Law</h2>
-              <span>Read More</span>
-            </div>
+            <img src="assets/images/sampleGlove02.jpg" alt="product2" width="150" class="img-fluid">
           </a>
         </div>
         <div>
@@ -606,7 +597,8 @@
 
     <script src="assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/lang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="assets/js/language.jquery.js"></script>
 
 	</body>
 </html>
