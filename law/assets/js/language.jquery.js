@@ -4,8 +4,8 @@ $(function () {
     // Initially disable language switching button.
     /*$('.switch-lang').css({'pointer-events':'none',
         'cursor':'default'}).attr('disabled','disabled');*/
-    setCookie("smth", "smth", 7);
-    alert(getCookie("smth"));
+
+    //alert(getCookie("smth"));
     //function langButtonListen() {
         $('.switch-lang').click(function (event) {
             alert($(this).attr("value"));
@@ -15,7 +15,7 @@ $(function () {
             // Switch cookie stored language.
             //alert($(this).attr("value"));
             $.cookie('lang', $(this).attr("value"), { expires: 7});
-            alert($.cookie('lang'));
+            //alert($.cookie('lang'));
 
       //  });
         // Enable lang switching button.
@@ -39,7 +39,7 @@ $(function () {
             $('[lang="hu"]').hide();
         }
     } else {
-        alert("else ág?")
+        //alert("else ág?")
         // no cookie set, so detect language based on location.
         /*if ("geolocation" in navigator) {
             // geolocation is available

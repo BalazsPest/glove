@@ -186,76 +186,79 @@
       </div>
     </section>
     <!-- END section -->
+
+
     <section class="pb_section" id="products">
     <h2 align="center">Termékeink</h2>
-      <div class="multiple-items pb_slide_v1">
-        <div>
-          <a href="" class="link-block">
-            <img src="assets/images/sampleGlove01.jpg" alt="product1" width="150" class="img-fluid">
+      <div  class="multiple-items pb_slide_v1">
+        <div id="galery" class="line-block">
+          <!--<a href="" class="link-block">-->
+            <img src="assets/images/sampleGlove01.jpg" alt="product1" width="150" class="img-fluid galery" value="1">
             <!--<div class="slide-text">
             if we want to give desc. for gloves
               <h2>Criminal Law</h2>
               <p>Read More</p>
-            </div>-->
-          </a>
-        </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/sampleGlove02.jpg" alt="product2" width="150" class="img-fluid">
-          </a>
-        </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_3.jpg" alt="product3" class="img-fluid">
-            <div class="slide-text">
-              <h2>Civil Rights</h2>
-              <span>Read More</span>
             </div>
-          </a>
+          </a>-->
         </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_4.jpg" alt="product4" class="img-fluid">
-            <div class="slide-text">
-              <h2>Property Law</h2>
-              <span>Read More</span>
-            </div>
-          </a>
+        <div class="line-block">
+            <img src="assets/images/sampleGlove02.jpg" alt="product2" width="150" class="img-fluid galery" value="2">
         </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_1.jpg" alt="product5" class="img-fluid">
-            <div class="slide-text">
-              <h2>Civil Rights</h2>
-              <span>Read More</span>
-            </div>
-          </a>
+        <div class="line-block">
+            <img src="assets/images/1900x1200_img_3.jpg" alt="product3" class="img-fluid galery" value="3">
         </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_2.jpg" alt="product6" class="img-fluid">
-            <div class="slide-text">
-              <h2>State Laws</h2>
-              <span>Read More</span>
-            </div>
-          </a>
+        <div class="line-block">
+
+            <img src="assets/images/1900x1200_img_4.jpg" alt="product4" class="img-fluid galery" value="4">
         </div>
-        <div>
-          <a href="#" class="link-block">
-            <img src="assets/images/1900x1200_img_3.jpg" alt="product7" class="img-fluid">
-            <div class="slide-text">
-              <h2>Immigration Laws</h2>
-              <span>Read More</span>
-            </div>
-          </a>
+        <div class="line-block">
+
+            <img src="assets/images/1900x1200_img_1.jpg" alt="product5" class="img-fluid galery" value="5">
+
+        </div>
+        <div class="line-block">
+            <img src="assets/images/1900x1200_img_2.jpg" alt="product6" class="img-fluid galery" value="6">
+
+        </div>
+        <div class="line-block">
+
+            <img src="assets/images/1900x1200_img_3.jpg" alt="product7" class="img-fluid galery" value="7">
+
         </div>
       </div>
 
     </section>
     <!-- END section -->
+    <!---------------------------------------modal content-------------------------------->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
 
-    
-    <section class="pb_section pb_bg-half" data-section="practicing-areas" id="section-practicing-areas">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="assets/images/sampleGlove01.jpg" style="width:100%">
+          <img src="assets/images/sampleGlove01.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="assets/images/sampleGlove02.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="assets/images/sampleGlove01.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="assets/images/sampleGlove02.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+
+        <section class="pb_section pb_bg-half" data-section="practicing-areas" id="section-practicing-areas">
       <div class="container">
         <div class="row justify-content-md-center text-center mb-5">
           <div class="col-lg-7">
@@ -586,19 +589,20 @@
     <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FDA04F"/></svg></div>
 
 
-    <script src="assets/js/jquery.min.js"></script>
-    
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/galery.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <script src="assets/js/language.jquery.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+
+        <script src="assets/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="assets/js/language.jquery.js"></script>
 
 	</body>
 </html>
