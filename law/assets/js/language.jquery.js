@@ -1,26 +1,12 @@
 $(function () {
-    ///// Language Switching (2 languages: English and Chinese). /////
 
-    // Initially disable language switching button.
-    /*$('.switch-lang').css({'pointer-events':'none',
-        'cursor':'default'}).attr('disabled','disabled');*/
-
-    //alert(getCookie("smth"));
-    //function langButtonListen() {
-        $('.switch-lang').click(function (event) {
-            alert($(this).attr("value"));
-            //event.preventDefault();
-            /*$('[lang="zh"]').toggle();
-            $('[lang="en"]').toggle();*/
-            // Switch cookie stored language.
-            //alert($(this).attr("value"));
-            $.cookie('lang', $(this).attr("value"), { expires: 7});
-            //alert($.cookie('lang'));
-
-      //  });
-        // Enable lang switching button.
-        /*$('.switch-lang').css({'pointer-events':'auto',
-            'cursor':'pointer'}).removeAttr('disabled');*/
+    $('.switch-lang').click(function (event) {
+        //alert($(this).attr("value"));
+        //event.preventDefault();
+        /*$('[lang="zh"]').toggle();
+        $('[lang="en"]').toggle();*/
+        // Switch cookie stored language.
+        $.cookie('lang', $(this).attr("value"), { expires: 7});
     });
 
     // Check if language cookie already exists.
